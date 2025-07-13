@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FluxSMS MiniApp v2.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📱 FluxSMS MiniApp</h1>
+    <select id="country">
+      <option value="+880">🇧🇩 Bangladesh</option>
+      <option value="+91">🇮🇳 India</option>
+      <option value="+98">🇮🇷 Iran</option>
+      <option value="+964">🇮🇶 Iraq</option>
+      <option value="+972">🇮🇱 Israel</option>
+      <option value="+254">🇰🇪 Kenya</option>
+      <option value="+7">🇷🇺 Russia</option>
+    </select>
+    <button onclick="getNumber()">📞 Get Number</button>
+    <div class="number-box">
+      <p><strong>Your Number:</strong> <span id="assignedNumber">Loading...</span></p>
+      <button onclick="changeNumber()">🔁 Change Number</button>
+    </div>
+    <div class="otp-section">
+      <h3>Recent OTPs</h3>
+      <ul id="otpList"></ul>
+    </div>
+    <div id="toast">Done</div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
